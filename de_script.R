@@ -94,7 +94,7 @@ res_tableKD <- lfcShrink(dds, coef = 2, type="apeglm")
 ## Summarize results
 summary(res_table_OE)
 
-### Set thresholds
+### Set thresholds (How I will set thresholds for any data, which criteria do I need to focus on?)
 padj.cutoff <- 0.05
 lfc.cutoff <- 0.58
 
