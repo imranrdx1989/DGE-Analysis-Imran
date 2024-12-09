@@ -66,7 +66,7 @@ resultsNames(dds)
 res_tableOE_unshrunken <- results(dds, contrast = contrast_oe, alpha = 0.05)
 
 # Shrink log fold changes (using apeglm method)
-res_table_OE <- lfcShrink(dds, coef = 2, type = "apeglm")
+res_table_OE <- lfcShrink(dds, coef = 3, type = "apeglm")
 
 # DGE workshop code -not working
 # res_tableOE <- lfcShrink(dds, contrast=contrast_oe, res=res_tableOE_unshrunken)
